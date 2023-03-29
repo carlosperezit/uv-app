@@ -11,12 +11,13 @@
   </head>
   <body>
     <script>
-      var password = prompt("Enter the password dumbass.");
-      if (password !== "apollo123") {
-        alert("Fuck off stupid cunt!");
-      } else {
-        var content = document.getElementById("content");
-        content.style.display = "block";
+      var password = "mypassword"; // replace with your own password
+      var userPassword = prompt("Please enter the password to access this website:");
+      if (userPassword === null) {
+        window.location.href = "access-denied.html";
+      } else if (userPassword !== password) {
+        alert("Incorrect password! Access denied.");
+        window.location.href = "access-denied.html";
       }
     </script>
     <div class="logo-wrapper">
