@@ -17,7 +17,7 @@
   if (userPassword === null) {
     window.location.href = "access-denied.html";
   } else if (userPassword !== password) {
-    alert("Incorrect password! Access denied.");
+    alert("Incorrect password dumbass!");
     window.location.href = "access-denied.html";
   } else {
     // set the cookie to remember the password
@@ -28,8 +28,7 @@
   window.onload = function() {
     var storedPassword = getCookie("password");
     if (storedPassword !== "") {
-      // if the password cookie exists, redirect to the main page
-      window.location.href = "main-page.html";
+      alert("Welcome back!");
     }
   };
 
