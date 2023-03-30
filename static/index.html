@@ -12,13 +12,13 @@
   </head>
   <body>
 <script>
-  var password = "apollo123"; // replace with your own password
-  var userPassword = prompt("Enter the password retard:");
-  if (userPassword === null) {
-    window.location.href = "access-denied.html";
-  } else if (userPassword !== password) {
-    alert("Incorrect password dumbass!");
-    window.location.href = "access-denied.html";
+     var password = "apollo123"; // replace with your own password
+     var userPassword = prompt("Enter the password retard:");
+     if (userPassword === null) {
+     window.location.href = "access-denied.html";
+    } else if (userPassword !== password) {
+      alert("Incorrect password dumbass!");
+     window.location.href = "access-denied.html";
   } else {
     // set the cookie to remember the password
     document.cookie = "password=" + password;
